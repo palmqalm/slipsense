@@ -3,15 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://palmqalm.github.io/slipsense/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
     "bootstrap": "^5.3.8",
+    "gh-pages": "^6.3.0",
     "leaflet": "^1.9.4",
     "papaparse": "^5.5.3",
     "react": "^19.1.1",
